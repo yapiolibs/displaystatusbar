@@ -1,0 +1,34 @@
+{
+  "name": "DisplayStatusBar",
+  "keywords": "display",
+  "description": "simple status bar printing custom information/icons on the topmost line",
+  "homepage": "https://github.com/yapiolibs/displaystatusbar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yapiolibs/displaystatusbar.git"
+  },
+  "authors": [
+    {
+        "name": "Raoul Rubien",
+        "url": "https://github.com/rubienr",
+        "maintainer" : "true"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "OperatingModes",
+      "version": "https://github.com/yapiolibs/opmodes",
+      "authors": "Raoul Rubien",
+      "frameworks": "arduino"
+    },
+    {
+      "name": "Ssd1306DisplayD1MiniCape",
+      "version": "https://github.com/yapiolibs/ssd1306display",
+      "authors": "Raoul Rubien",
+      "frameworks": "arduino"
+    }
+  ],
+  "version": "0.1",
+  "frameworks": "arduino",
+  "platforms": "espressif8266, esp32"
+}
