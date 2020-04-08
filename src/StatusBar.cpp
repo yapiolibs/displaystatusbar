@@ -108,7 +108,13 @@ StatusBar::StatusBar(const OperatingMode &operating_mode, Display &display) : op
 void StatusBar::update()
 {
     reset();
-    printWifiStatus();
+
+    if (data.enable_temperature)
+        printf("%.1fC", data.temperature_celsius);
+
+    if (data.enable_wifi_status)
+        printWifiStatus();
+
     display.display();
 }
 
